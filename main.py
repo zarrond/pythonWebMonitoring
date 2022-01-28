@@ -20,7 +20,6 @@ def get(url):
 
 dirr = os.path.dirname(os.path.realpath(__file__))
 
-print(dirr)
 while True:
     with open(dirr + r"\data.txt", "a") as f:
         response = get('http://api.ipify.org/')
